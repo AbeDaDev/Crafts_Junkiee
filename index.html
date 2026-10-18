@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Crafts Junkiee | 3D prints, trays, keychains and pens</title>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+<div class="bar">Handmade in Orange County, CA · Free shipping on orders over $35</div>
+<header>
+  <a class="logo" href="#">🎀 Crafts Junkiee</a>
+  <nav><a href="#shop">Shop</a><a href="#lab">Make yours</a><a href="#how">Custom orders</a><a href="#reviews">Reviews</a></nav>
+  <button class="cart" id="cart" aria-live="polite">Cart (0)</button>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>3D prints with a bow on top.</h1>
+      <p>Keychains, trinket trays, pens and fidgets printed in Orange County, plus heat transfer and sublimation pieces. Pick your colors or ask for something custom.</p>
+      <a class="btn" href="#lab">Design a keychain</a><a class="btn alt" href="#shop">Shop all</a>
+    </div>
+    <svg class="flower" viewBox="0 0 400 400" role="img" aria-label="A crimson bow keychain with layered print lines">
+      <defs><pattern id="ln" width="8" height="6" patternUnits="userSpaceOnUse"><rect width="8" height="3" fill="#fff" opacity=".22"/></pattern></defs>
+      <circle cx="200" cy="46" r="16" fill="none" stroke="#4a1230" stroke-width="6"/><path d="M200 62v110" stroke="#4a1230" stroke-width="6"/>
+      <g transform="translate(200 215) scale(1.6) translate(-150 -125)"><g fill="#d6215a"><path d="M150 130C90 70 30 90 38 150c6 50 70 46 112-6zM150 130c60-60 120-40 112 20-6 50-70 46-112-6z"/><rect x="132" y="112" width="36" height="40" rx="12"/><path d="M140 150l-30 42 26-4 14 14zM160 150l30 42-26-4-14 14z"/></g><g fill="url(#ln)"><path d="M150 130C90 70 30 90 38 150c6 50 70 46 112-6zM150 130c60-60 120-40 112 20-6 50-70 46-112-6z"/><rect x="132" y="112" width="36" height="40" rx="12"/><path d="M140 150l-30 42 26-4 14 14zM160 150l30 42-26-4-14 14z"/></g></g>
+    </svg>
+  </div>
+  <svg class="wave" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 24c100-30 200 30 300 0s200-30 300 0 200 30 300 0 200-30 300 0V46H0z" fill="#fff0f5"/></svg>
+</div>
+<div class="marquee" aria-hidden="true"><span>Handmade in OC * 3D prints * Heat transfers * Sublimation * Custom orders welcome * Handmade in OC * 3D prints * Heat transfers * Sublimation * </span></div>
+
+<section>
+  <div class="wrap cats">
+    <a class="cat" href="#shop" data-go="key"><h3>Keychains</h3><span>Bows, names, hearts and team colors</span></a>
+    <a class="cat" href="#shop" data-go="tray"><h3>Trinket trays</h3><span>Bows and shapes for rings, pins and pens</span></a>
+    <a class="cat" href="#shop" data-go="pen"><h3>Pens & fidgets</h3><span>Printed bodies, smooth gel ink</span></a>
+    <a class="cat" href="#how"><h3>Custom orders</h3><span>Heat transfers, sublimation and one-offs</span></a>
+  </div>
+</section>
+
+<section id="lab" style="padding-top:0">
+  <div class="wrap">
+    <div class="lab">
+      <div>
+        <h2>Make it yours</h2>
+        <p>Type a name and pick a color. The preview updates as you go.</p>
+        <label for="nm">Name (up to 8 letters)</label>
+        <input type="text" id="nm" maxlength="8" value="Ava" autocomplete="off">
+        <label id="cl">Color</label>
+        <div class="sw" id="sw" role="group" aria-labelledby="cl"></div>
+        <label for="sh">Shape</label>
+        <div class="tabs" id="shp" role="group" aria-label="Shape"></div>
+        <button class="btn" id="addc">Add to cart · $8</button>
+      </div>
+      <div class="stage"><div id="prev" style="width:100%;max-width:320px"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="shop" style="padding-top:0">
+  <div class="wrap">
+    <h2>Shop the shelf</h2>
+    <p class="sub">Everything is made to order in small batches, so colors can be swapped on request.</p>
+    <div class="tabs" id="tabs" role="group" aria-label="Filter products"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="wrap">
+    <h2>Custom orders welcome</h2>
+    <p class="sub">Want a color, name or design that isn’t on the shelf? Message @crafts_junkiee on Instagram with your idea and we’ll send a quote.</p>
+    <div class="steps">
+      <div><h3>You pick</h3><p>Choose a design, a color and a name if you want one.</p></div>
+      <div><h3>We make it</h3><p>Printed, heat-pressed or sublimated by hand, then checked before it ships.</p></div>
+      <div><h3>We ship</h3><p>It leaves our studio within 3 days, packed in a small gift bag.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <h2>Notes from happy customers</h2>
+    <div class="reviews" style="margin-top:26px">
+      <blockquote>The name tag came out so crisp and the pink is exactly like the photos. It’s on my backpack now.<b>Maya R.</b></blockquote>
+      <blockquote>Ordered pens as bridesmaid gifts. Everyone asked where I found them.<b>Jess T.</b></blockquote>
+      <blockquote>Fast shipping and a handwritten thank-you note inside. Buying again.<b>Daniela P.</b></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="join">
+  <div class="wrap">
+    <h2>Join the list</h2>
+    <p>Be first to see new colors, limited drops and restocks.</p>
+    <form id="nl"><label for="em" style="position:absolute;left:-9999px">Email</label><input type="text" id="em" placeholder="Email address" inputmode="email"><button class="btn" style="background:var(--rasp);color:#fff">Sign me up</button></form>
+    <p id="nlm" style="margin-top:12px;min-height:26px" aria-live="polite"></p>
+  </div>
+</section>
+<footer>Crafts Junkiee · Orange County, CA · @crafts_junkiee on Instagram and TikTok</footer>
+
+<script type="module" src="/src/script.js"></script>
+</body>
+</html>
