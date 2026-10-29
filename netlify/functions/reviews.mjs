@@ -1,22 +1,14 @@
 // GET  /api/reviews  -> latest reviews (newest first)
 // POST /api/reviews  -> add a review { name, rating, product, text }
 // Needs the MONGODB_URI environment variable set in Netlify (Site settings > Environment variables).
-import { MongoClient } from 'mongodb'
+import { collection, json } from '../lib/db.mjs'
 
 const PRODUCTS = ['', 'Keychains', 'DIY Pens', 'Glitter', 'DTF Prints', 'Accessories', 'Custom order']
-let clientPromise
 
-function reviews() {
-  if (!process.env.MONGODB_URI) return null
-  clientPromise ??= new MongoClient(process.env.MONGODB_URI).connect()
-  return clientPromise.then((c) => c.db(process.env.MONGODB_DB || 'crafts_junkiee').collection('reviews'))
-}
-
-const json = (body, status = 200) => Response.json(body, { status })
 const clean = ({ _id, ...r }) => ({ id: String(_id), ...r })
 
 export default async (req) => {
-  const col = await reviews()
+  const col = await collection('reviews')
   if (!col) return json({ error: 'Reviews are not connected yet.' }, 503)
 
   if (req.method === 'GET') {
