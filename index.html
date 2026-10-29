@@ -10,9 +10,12 @@
 <body>
 <div class="bar">Handmade in Orange County, CA · Free shipping on orders over $35</div>
 <header>
-  <a class="logo" href="#">🎀 Crafts Junkiee</a>
-  <nav><a href="#shop">Shop</a><a href="#lab">Make yours</a><a href="#how">Custom orders</a><a href="#reviews">Reviews</a></nav>
-  <button class="cart" id="cart" aria-live="polite">Cart (0)</button>
+  <nav><a href="/shop.html">Shop</a><a href="/samples.html">Samples</a><a href="#how">Custom orders</a><a href="/reviews.html">Reviews</a></nav>
+  <div class="hdr-actions">
+    <a class="social" href="https://www.instagram.com/crafts_junkiee/" target="_blank" rel="noopener" aria-label="Crafts Junkiee on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg></a>
+    <a class="social" href="mailto:crafts.junkiee@gmail.com" aria-label="Email Crafts Junkiee"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></a>
+    <button class="cart" id="cart" aria-live="polite">Cart (0)</button>
+  </div>
 </header>
 
 <div class="hero">
@@ -20,52 +23,31 @@
     <div>
       <h1>3D prints with a bow on top.</h1>
       <p>Keychains, trinket trays, pens and fidgets printed in Orange County, plus heat transfer and sublimation pieces. Pick your colors or ask for something custom.</p>
-      <a class="btn" href="#lab">Design a keychain</a><a class="btn alt" href="#shop">Shop all</a>
+      <a class="btn" href="/customize.html#lab">Design a keychain</a><a class="btn alt" href="/shop.html">Shop all</a>
     </div>
-    <svg class="flower" viewBox="0 0 400 400" role="img" aria-label="A crimson bow keychain with layered print lines">
-      <defs><pattern id="ln" width="8" height="6" patternUnits="userSpaceOnUse"><rect width="8" height="3" fill="#fff" opacity=".22"/></pattern></defs>
-      <circle cx="200" cy="46" r="16" fill="none" stroke="#4a1230" stroke-width="6"/><path d="M200 62v110" stroke="#4a1230" stroke-width="6"/>
-      <g transform="translate(200 215) scale(1.6) translate(-150 -125)"><g fill="#d6215a"><path d="M150 130C90 70 30 90 38 150c6 50 70 46 112-6zM150 130c60-60 120-40 112 20-6 50-70 46-112-6z"/><rect x="132" y="112" width="36" height="40" rx="12"/><path d="M140 150l-30 42 26-4 14 14zM160 150l30 42-26-4-14 14z"/></g><g fill="url(#ln)"><path d="M150 130C90 70 30 90 38 150c6 50 70 46 112-6zM150 130c60-60 120-40 112 20-6 50-70 46-112-6z"/><rect x="132" y="112" width="36" height="40" rx="12"/><path d="M140 150l-30 42 26-4 14 14zM160 150l30 42-26-4-14 14z"/></g></g>
-    </svg>
+    <img class="flower hero-logo" src="./mainlogo.png" alt="Crafts Junkiee by Gabby logo">
   </div>
-  <svg class="wave" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 24c100-30 200 30 300 0s200-30 300 0 200 30 300 0 200-30 300 0V46H0z" fill="#fff0f5"/></svg>
+  <svg class="wave" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 24c100-30 200 30 300 0s200-30 300 0 200 30 300 0 200-30 300 0V46H0z" fill="#fdf7f9"/></svg>
 </div>
 <div class="marquee" aria-hidden="true"><span>Handmade in OC * 3D prints * Heat transfers * Sublimation * Custom orders welcome * Handmade in OC * 3D prints * Heat transfers * Sublimation * </span></div>
 
 <section>
-  <div class="wrap cats">
-    <a class="cat" href="#shop" data-go="key"><h3>Keychains</h3><span>Bows, names, hearts and team colors</span></a>
-    <a class="cat" href="#shop" data-go="tray"><h3>Trinket trays</h3><span>Bows and shapes for rings, pins and pens</span></a>
-    <a class="cat" href="#shop" data-go="pen"><h3>Pens & fidgets</h3><span>Printed bodies, smooth gel ink</span></a>
-    <a class="cat" href="#how"><h3>Custom orders</h3><span>Heat transfers, sublimation and one-offs</span></a>
-  </div>
+  <div class="wrap"><div class="cats">
+    <a class="cat" href="/keychains.html"><div class="lbl"><h3>Keychains</h3><span>Bows, names, hearts and team colors</span></div></a>
+    <a class="cat" href="/diy-pens.html"><div class="lbl"><h3>DIY Pens</h3><span>Build-your-own pen kits with smooth gel ink</span></div></a>
+    <a class="cat" href="/glitter.html"><div class="lbl"><h3>Glitter</h3><span>Sparkle for tumblers, pens and crafts</span></div></a>
+    <a class="cat" href="/dtf-prints.html"><div class="lbl"><h3>DTF Prints</h3><span>Ready-to-press transfers for shirts and totes</span></div></a>
+    <a class="cat" href="/accessories.html"><div class="lbl"><h3>Accessories</h3><span>Trinket trays, fidgets and little extras</span></div></a>
+    <a class="cat" href="/customize.html"><div class="lbl"><h3>Customize</h3><span>Your colors, your names, your one-off ideas</span></div></a>
+  </div></div>
 </section>
 
-<section id="lab" style="padding-top:0">
+<section id="preview" style="padding-top:0">
   <div class="wrap">
-    <div class="lab">
-      <div>
-        <h2>Make it yours</h2>
-        <p>Type a name and pick a color. The preview updates as you go.</p>
-        <label for="nm">Name (up to 8 letters)</label>
-        <input type="text" id="nm" maxlength="8" value="Ava" autocomplete="off">
-        <label id="cl">Color</label>
-        <div class="sw" id="sw" role="group" aria-labelledby="cl"></div>
-        <label for="sh">Shape</label>
-        <div class="tabs" id="shp" role="group" aria-label="Shape"></div>
-        <button class="btn" id="addc">Add to cart · $8</button>
-      </div>
-      <div class="stage"><div id="prev" style="width:100%;max-width:320px"></div></div>
-    </div>
-  </div>
-</section>
-
-<section id="shop" style="padding-top:0">
-  <div class="wrap">
-    <h2>Shop the shelf</h2>
-    <p class="sub">Everything is made to order in small batches, so colors can be swapped on request.</p>
-    <div class="tabs" id="tabs" role="group" aria-label="Filter products"></div>
-    <div class="grid" id="grid"></div>
+    <h2>Fresh off the printer</h2>
+    <p class="sub">A shuffle of what’s on the shelf right now.</p>
+    <div class="grid shuffle" id="shuffle" aria-live="off"></div>
+    <div class="preview-actions"><a class="btn" href="/shop.html">Shop all products</a><button class="btn alt" id="shuffle-toggle" aria-pressed="false">Pause shuffle</button></div>
   </div>
 </section>
 
@@ -89,6 +71,7 @@
       <blockquote>Ordered pens as bridesmaid gifts. Everyone asked where I found them.<b>Jess T.</b></blockquote>
       <blockquote>Fast shipping and a handwritten thank-you note inside. Buying again.<b>Daniela P.</b></blockquote>
     </div>
+    <div class="preview-actions"><a class="btn" href="/reviews.html">Read all reviews</a><a class="btn alt" href="/reviews.html#write">Leave a review</a></div>
   </div>
 </section>
 
@@ -100,7 +83,13 @@
     <p id="nlm" style="margin-top:12px;min-height:26px" aria-live="polite"></p>
   </div>
 </section>
-<footer>Crafts Junkiee · Orange County, CA · @crafts_junkiee on Instagram and TikTok</footer>
+<footer>
+  <div class="foot-links">
+    <a class="btn" href="https://www.instagram.com/crafts_junkiee/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg> Instagram</a>
+    <a class="btn alt" href="mailto:crafts.junkiee@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg> Email us</a>
+  </div>
+  <p>Crafts Junkiee · Orange County, CA · @crafts_junkiee on Instagram and TikTok</p>
+</footer>
 
 <script type="module" src="/src/script.js"></script>
 </body>
